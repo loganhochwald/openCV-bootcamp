@@ -29,6 +29,7 @@ plt.imshow(cv2.cvtColor(image_with_line, cv2.COLOR_BGR2RGB))
 
 image_with_circle = image.copy()
 cv2.circle(image_with_circle, (((int)(image.shape[1] / 2)), ((int)(image.shape[0] / 2))), 300, (20, 20, 180), thickness=20)
+cv2.circle(image_with_circle, (((int)(image.shape[1] / 2)), ((int)(image.shape[0] / 2))), 100, (20, 20, 180), thickness=-2)
 plt.imshow(cv2.cvtColor(image_with_circle, cv2.COLOR_BGR2RGB))
 
 
@@ -44,8 +45,9 @@ plt.imshow(cv2.cvtColor(image_with_rect, cv2.COLOR_BGR2RGB))
 # img = cv2.putText(img, text, org, fontFace, fontScale, color[, thickness[, lineType[, bottomLeftOrigin]]])
 image_with_txt = image.copy()
 text = 'Billie Jean is not my lover'
-cv2.putText(image_with_txt, text, (((int)(image.shape[1] / 4)), ((int)(image.shape[0] / 2))), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (0, 255, 0), thickness=3)
-plt.imshow(cv2.cvtColor(image_with_txt, cv2.COLOR_BGR2RGB))
+# text will be upside down bc negative number
+cv2.putText(image_with_txt, text, (((int)(image.shape[1])), ((int)(image.shape[0] / 2))), cv2.FONT_HERSHEY_TRIPLEX, -2, (0, 255, 0), thickness=3)
+#plt.imshow(cv2.cvtColor(image_with_txt, cv2.COLOR_BGR2RGB))
 
 
 plt.show()
