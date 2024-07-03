@@ -65,3 +65,6 @@ with Image.open(r'C:\openCV-bootcamp\image-enhancement\practice\gir-dancing.gif'
 
 # Save the processed frames as a new GIF
 processed_frames[0].save(r'C:\openCV-bootcamp\image-enhancement\practice\processed_gir_dancing_green.gif', save_all=True, append_images=processed_frames[1:], loop=0, duration=gif.info['duration'])
+
+# Gif source: https://i.pinimg.com/originals/96/52/3f/96523f2c3d53787e051d596041b52074.gif
+# Background source: https://st2.depositphotos.com/3224051/9271/i/950/depositphotos_92710762-stock-photo-vivid-green-coloured-splatter-cool.jpg

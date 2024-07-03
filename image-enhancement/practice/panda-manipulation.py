@@ -43,3 +43,6 @@ plt.imshow(result)
 cv2.imwrite('cooler_panda.png', result[:, :, ::-1])
 
 plt.show()
+
+# Panda source: https://i.pinimg.com/originals/41/05/d5/4105d5622c8a68d05ab861702b29d487.jpg
+# Background source: https://st2.depositphotos.com/3224051/9271/i/950/depositphotos_92710762-stock-photo-vivid-green-coloured-splatter-cool.jpg
